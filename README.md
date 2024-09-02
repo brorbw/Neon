@@ -1,5 +1,7 @@
 ## Neon
 
+Disclosure: This is a WIP
+
 A re-imagined browser inspired by the work of @JadenGeller in
 https://github.com/JadenGeller/Helium. I'm aware of the work of HeliumLift and I
 plan on implementing similar features.
