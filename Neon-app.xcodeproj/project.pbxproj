@@ -20,6 +20,7 @@
 		1153535E2C853A7800109007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115353612C853A7800109007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		115353632C853A7800109007 /* Neon_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Neon_app.entitlements; sourceTree = "<group>"; };
+		115353692C853E6900109007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		115353592C853A7700109007 /* Neon-app */ = {
 			isa = PBXGroup;
 			children = (
+				115353692C853E6900109007 /* Info.plist */,
 				1153535A2C853A7700109007 /* Neon_appApp.swift */,
 				1153535C2C853A7700109007 /* ContentView.swift */,
 				1153535E2C853A7800109007 /* Assets.xcassets */,
@@ -260,6 +262,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
@@ -268,6 +271,7 @@
 		115353672C853A7800109007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Neon-app/Neon_app.entitlements";
@@ -277,6 +281,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Neon-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Neon-app/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -285,6 +291,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "coffee.nobad.Neon-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx14.2;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -302,6 +309,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Neon-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Neon-app/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +319,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "coffee.nobad.Neon-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx14.2;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
