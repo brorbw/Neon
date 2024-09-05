@@ -7,7 +7,7 @@ struct ContentView: View {
     @State private var urlString = "https://plex.tv"
     @State private var webView = WebView()
     var body: some View {
-        if showModal == true {
+        if showModal {
             ModalView(showModal: $showModal, urlString: $urlString, webView: $webView)
         } else {
             webView
